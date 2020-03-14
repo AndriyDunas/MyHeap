@@ -1,0 +1,26 @@
+int k= 1 , *i;
+myHeap = malloc(HEAP_SIZE);
+MyMemset(myHeap, '@', HEAP_SIZE);
+
+i = (int*)MyMalloc(4);
+
+MyMemmap();
+	PrintList();
+	//getchar();
+
+(*i) = 7;
+MyMemmap();
+	PrintList();
+	//getchar();
+
+
+while(i){
+	MyFree(i);
+	i=(int*)MyMalloc(k*3);
+	k++;
+	printf("%d %d %d\n",i,*i,k*4);
+	
+	MyMemmap();
+	PrintList();
+	//getchar();
+}
